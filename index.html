@@ -18,6 +18,7 @@
   <link href="https://fonts.googleapis.com/css?family=Catamaran:200,300,400,500,600,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
 <style>
   html, body {
   font-family: Helvetica;
@@ -129,82 +130,21 @@ a {
 }
 
 .left .info .name {
-      font-weight: 300;
-      font-size:30px;
+      font-weight: 600;
+      font-size:50px;
     display: block;
   
 }
 
 .left .info .social-links {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 
-.left .info .fa {
-  margin: 15px;
-  font-size: 29px;
-  color: #fff;
-}
-
-.erc:hover
-{
- color: transparent;
- 
-  background: url('../img/Ericsson.jpg') ;
-  background-size: 120px;
-  width: 500px;
-  height: 200px;
-  border: 2px solid;
-  background-repeat: no-repeat;
-  padding-bottom:20px;
-}
-.smg:hover
-{
-  
-  color: transparent;
- 
-  background: url('../img/smg.png') ;
-  background-size: 100px;
-  width: 400px;
-  height: 20px;
-  border: 2px solid;
-  background-repeat: no-repeat;
- 
-}
-
-.bb:hover
-{
-  
-  color: transparent;
- 
-  background: url('../img/bb.png') ;
-  background-size: 120px;
-  width: 400px;
-  height: 20px;
-  border: 2px solid;
-  background-repeat: no-repeat;
- 
-}
 
 
-.sfu:hover
-{
-   color: transparent;
- 
-  
-  background-size: 150px;
-  width: 400px;
-  height: 400px;
-  border: 2px solid;
-  background-repeat: no-repeat;
- 
-}
 
 
-.social-links .cmn-t-scale:hover {
-  color: #fff;
-  transform: scale(1.1);
-}
 @media screen and (max-width: 1000px) {
   .left, .right {
     display: block;
@@ -212,7 +152,17 @@ a {
   }
   .left {
     position: static;
+    
+    
   }
+  .left .info .name {
+      font-weight: 600;
+      font-size:50px;
+    display: block;
+    margin-top:-100px;
+  
+}
+ 
 }
 
 .right {
@@ -414,6 +364,33 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
+#icons .fa {
+    color:white;
+    margin:5px 15px;
+    position:relative;
+    bottom:0;
+    transition:all 0.2s ease-in-out;
+}
+
+#icons .linkedin:hover {
+    color:#6cadde;
+    bottom:5px;
+    
+}
+
+#icons .facebook:hover {
+    color:#3b5998;
+    bottom:5px;
+}
+
+
+
+#icons .github:hover {
+    color:#3f4142;
+    bottom:5px;
+}
+
+
   </style>
   
   </head>
@@ -425,9 +402,23 @@ a {
               <div class="info">
                 <h2 class="name">Hi, My name is Jaskaran Singh</h2>    
                 <div class="social-links"> 
-                  <a class="hello" href="https://www.facebook.com/jaskaransingh1989" target="_blank"><i class="fa fa-facebook"></i></a>               
-                  <a class="hello" href="https://github.com/jaskaran1989" target="_blank"><i class="fa fa-github"></i></a>
-                  <a class="hello" href="https://www.linkedin.com/in/jaskaransinghshergill/"  target="_blank"><i class="fa fa-linkedin"></i></a>               
+                      
+                  <section id="icons">
+                    <div class="container">
+                        <div class="row">
+                        
+                            <div class="col-md-12">
+                                <ul class="list-inline">   
+                                    <a href="https://www.facebook.com/jaskaransingh1989" target="blank"><li class="list-inline-item"><i class="fa facebook fa-facebook-square fa-4x" aria-hidden="true"></i></li></a>
+                                    <a href="https://github.com/jaskaran1989" target="blank"><li class="list-inline-item"><i class="fa github fa-github-square fa-4x" aria-hidden="true"></i></li></a>
+                                    <a href="https://www.linkedin.com/in/jaskaransinghshergill/" target="blank"><li class="list-inline-item"><i class="fa linkedin fa-linkedin-square fa-4x" aria-hidden="true"></i></li></a>
+                                </ul>
+                            </div>
+                            
+                        </div>  
+                    </div>
+                  </section>
+                   
                 </div>
               </div>
             </div>
@@ -446,7 +437,7 @@ a {
                 <div class="content">
                   <div class="skill-category">
                     <strong>Languages: &nbsp;</strong>
-                    <span>Python, C#, JavaScript(React/Es6) , Bash, HTML5 and CSS</span>
+                    <span>Python, C#, JavaScript(React/Es6), HTML5 and CSS</span>
                     
                   </div>
                   <div class="skill-category">
@@ -520,10 +511,10 @@ Ansible, Vagrant, Amazon Web Services (AWS)
         <div><b class="techfont"> Technologies Used:</b> Visual Studio, JavaScript, ASP.NET, MySQL, Visual Basic and C++</div>
         <ul class="description">
         <li>Designed and implement a web component from scratch using Google Maps to replace Subrim.net (advanced 3rd party Google Maps control for VB.NET)</li>
-          <li>Helped ICRC to develop desktop application “thedarkcrawler.com” which is used to identify extremist content on TOR</li>
+          <li>Helped ICRC to develop desktop application "thedarkcrawler.com" which is used to identify extremist content on TOR</li>
           <li>Write complex SQL Queries and triggers to access data more efficiently and quickly</li>
             <li>
-            Involved in redesigned application’s navigation and (Agile planning/sprints, collaboration, design sessions and code reviews)
+            Involved in redesigned application's navigation and (Agile planning/sprints, collaboration, design sessions and code reviews)
 </li>
         </ul>
       </div>
@@ -537,7 +528,7 @@ Ansible, Vagrant, Amazon Web Services (AWS)
         <div><b class="techfont"> Technologies Used:</b> HTML, CSS, ASP.NET, SQL, JavaScript and C#</div>
         <ul class="description">
         <li>Designed and implemented buisness card permissions approval feature  for company's internal website. </li>
-          <li>Assist team members to maintain Westport’s Material Database system, which determines the causes of engine and vehicle failure</li>
+          <li>Assist team members to maintain Westport's Material Database system, which determines the causes of engine and vehicle failure</li>
           <li>Identify existing problems and patch system bugs which enhance system efficiency and improve overall productivity of the system</li>
             <li>Perform White box and Black box testing in order to patch application bugs and focused on writing clean and rewritable code.</li>
             
